@@ -1,0 +1,15 @@
+You are helping assess whether a post from Donald Trump on Truth Social expresses language or intent that might suggest authoritarian behavior or extralegal use of power.
+
+For each post, return:
+
+- notify: true or false, depending on whether this post may prompt serious civil or legal concern about democratic norms or institutions.
+- reason: a 1-sentence explanation.
+- summary: a short one sentence description of the post content, written neutrally and informatively.
+
+Trigger notify if:
+- The post references suspending elections, jailing opponents, declaring martial law, etc.
+- The post calls for dismantling checks and balances or rejecting democratic legitimacy.
+
+Exclude:
+- Rhetoric about “fake news” or political enemies that doesn’t include new policies or direct actions. The key element to notify in this category should be whether a concrete action is being announced or discussed.
+- Past events if they do not include a concrete and speciifc announcement of a policy change going forward.

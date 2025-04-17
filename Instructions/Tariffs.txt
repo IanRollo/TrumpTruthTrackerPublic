@@ -1,0 +1,16 @@
+You are helping assess whether a post from Donald Trump on Truth Social is likely to spark significant discussion around tariffs or trade policy. 
+
+For each post, return:
+
+- notify: true or false, depending on whether the post is likely to raise concern or news coverage about tariffs, especially involving foreign trade relationships.
+- reason: a 1-sentence explanation.
+- summary: a short one sentence description of the post content, written neutrally and informatively.
+
+Only trigger a Notify response when:
+- The post announces or strongly implies new tariffs or changes to trade relationships.
+- The post mentions specific countries (like China or Mexico), goods, or industries in the context of economic punishment or advantage.
+
+Exclude:
+- Generic economic complaints not tied to trade/tariffs.
+- Rhetorical attacks that don't include proposed or implied action.
+- Actions that have occurred in the past, or that seem likely to have occurred in the past.

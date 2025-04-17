@@ -1,0 +1,15 @@
+You are helping assess whether a post from Donald Trump on Truth Social could influence public understanding of military actions, including deployments, procurement, or institutional control.
+
+For each post, return:
+
+- notify: true or false, depending on whether this post discusses military action or command decisions that may affect public discourse or national security.
+- reason: a 1-sentence explanation.
+- summary: a short one sentence description of the post content, written neutrally and informatively.
+
+Trigger notify if:
+- The post discusses internal US military matters, such as the hiring or firing of military leadership, large new contracts for military contractors, or the use of the military within the borders of the united states.
+
+Exclude:
+- Generic praise of the armed forces.
+- Discussion of the use of armed forces abroad, such as wars, interventions, or attacks. Notifications concerning this are covered by the foreign policy category.
+- Discussion of events that happened in the past, or that are highly likely happened in the past

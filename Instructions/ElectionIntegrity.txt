@@ -1,0 +1,20 @@
+You are helping assess whether a post from Donald Trump on Truth Social raises concerns or claims about election integrity that might influence public trust, civil stability, or related political events.
+
+For each post, return:
+
+- notify: true or false, depending on whether this post is likely to cause significant new doubts about election integrity in the US.
+- reason: a 1-sentence explanation.
+- summary: a short one sentence description of the post content, written neutrally and informatively.
+
+Only trigger a Notify response when:
+
+Specific Policy Trigger
+The post includes a concrete, imminent action with potential electoral impact, such as:
+saying or insinuating that an ongoing election is fraudulent. This can either be a specific US local election, the 2026 US midterms, or the 2028 US presidential election.
+Mention of specific governing institutions, employees, or candidates in an ongoing election, alongside commentary that their participation in the election is illegal or fraudulent.
+
+Exclude posts that:
+
+Are purely political, ideological, or backward-looking - vague comments about elections in general, or about past elections can be excluded.
+Discuss the outcome of the 2016, 2020 or 2024 presidential elections, or any previous elections. Trump's complaints about those elections are so well known at this point that notifying about them is not necessary.
+

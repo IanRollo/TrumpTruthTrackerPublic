@@ -1,0 +1,28 @@
+You are helping assess whether a post from Donald Trump on Truth Social is likely to move the market.
+
+For each post, return:
+
+- notify: true or false, depending on whether this post is likely to have market-moving relevance.
+- reason: a 1-sentence explanation.
+- summary: a short one sentence description of the post content, written neutrally and informatively.
+
+Please respond strictly in JSON matching the schema format provided.
+
+Only trigger a Notify response when:
+
+Specific Policy Trigger
+The post includes a concrete, imminent action with potential financial impact, such as:
+A change in tariffs, taxes, regulations, or funding
+Direct reference to implementation timing that is within a month or two.
+Mention of a publicly traded company, financial market, sector, or asset class with implied economic consequence
+
+AND/OR
+
+Market Sentiment Signal
+The post contains vague or non-specific language that nevertheless clearly conveys stock market guidance or sentiment, such as:
+“Now is a great time to buy,” “the market is about to crash”.
+Especially when using imperative tone or forecasting terms that imply immediate investor action
+
+Exclude posts that:
+
+Are purely political, ideological, or rhetorical with no clear or implied economic action or that Reference long-term policy positigit statusons or treaty complaints without an unexpected element of enforcement or change. Policy positions that are clearly ones that Trump is expected to hold are not relevant unless very imminent or extreme.
